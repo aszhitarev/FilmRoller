@@ -8,8 +8,6 @@ using System.Data.Entity;
 
 namespace FilmRoller
 {
-    class FilmRollerContext
-    {
         class FilmRollerContext : DbContext
         {
             public FilmRollerContext()
@@ -20,5 +18,5 @@ namespace FilmRoller
             public DbSet<Owner> Owners { get; set; }
             public DbSet<Review> Reviews { get; set; }
         }
-    }
+
 }
