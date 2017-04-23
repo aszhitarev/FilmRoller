@@ -24,5 +24,8 @@ namespace FilmRoller
         int FilmId { get; set; }
         int OwnerId { get; set; }
         DateTime ReviewDate { get; set; }
+        public virtual ICollection<Owner> Owner { get; set; }
+        public virtual ICollection<Film> Film { get; set; }
+
     }
 }
