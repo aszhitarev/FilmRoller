@@ -24,5 +24,11 @@ namespace FilmRoller
         {
             InitializeComponent();
         }
+
+        private void AddOwner_Click(object sender, RoutedEventArgs e)
+        {
+            AddOwner addowner = new AddOwner();
+            addowner.Show();
+        }
     }
 }
