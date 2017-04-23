@@ -17,4 +17,11 @@ namespace FilmRoller
         int OwnerId { get; set; }
         string OwnerName { get; set; }
     }
+
+    public class Review
+    {
+        int ReviewId {get; set;}
+        int FilmId {get; set;}
+        int OwnerId {get; set;}
+        DateTime ReviewDate {get; set;}
 }
