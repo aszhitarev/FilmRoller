@@ -12,4 +12,9 @@ namespace FilmRoller
         int FilmName { get; set; }
         int FilmOwner { get; set; }
     }
+    public class Owner
+    {
+        int OwnerId { get; set; }
+        string OwnerName { get; set; }
+    }
 }
