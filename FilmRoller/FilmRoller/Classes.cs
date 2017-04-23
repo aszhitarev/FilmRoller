@@ -8,22 +8,22 @@ namespace FilmRoller
 {
     public class Film
     {
-        int FilmId { get; set; }
-        int FilmName { get; set; }
-        int FilmOwner { get; set; }
+        public int FilmId { get; set; }
+        public int FilmName { get; set; }
+        public int FilmOwner { get; set; }
     }
     public class Owner
     {
-        int OwnerId { get; set; }
-        string OwnerName { get; set; }
+        public int OwnerId { get; set; }
+        public string OwnerName { get; set; }
     }
 
     public class Review
     {
-        int ReviewId { get; set; }
-        int FilmId { get; set; }
-        int OwnerId { get; set; }
-        DateTime ReviewDate { get; set; }
+        public int ReviewId { get; set; }
+        public int FilmId { get; set; }
+        public int OwnerId { get; set; }
+        public DateTime ReviewDate { get; set; }
         public virtual ICollection<Owner> Owner { get; set; }
         public virtual ICollection<Film> Film { get; set; }
 
